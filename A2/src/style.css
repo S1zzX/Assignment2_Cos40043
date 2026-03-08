@@ -1,0 +1,200 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #0a58ca;
+}
+
+/* Buttons - Enhanced Bootstrap */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Cards - Enhanced Bootstrap */
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+/* Form Controls - Enhanced Bootstrap */
+.form-control:focus,
+.form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* List Group Items - Enhanced Bootstrap */
+.list-group-item {
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+/* Bootstrap Icons Enhancement */
+.bi {
+  vertical-align: middle;
+}
+
+/* Badges - Enhanced Bootstrap */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Custom Utilities */
+.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.gap-3 {
+  gap: 1rem !important;
+}
+
+/* Header Gradient */
+.bg-gradient {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Spacing */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print,
+  header,
+  footer {
+    display: none !important;
+  }
+
+  .card {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Animation for router transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.card {
+  padding: 2em;
+}
+
+/* App container - full width to allow navbar to span entire screen */
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar - full width */
+.navbar {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Main content - full width, let each page handle its own centering */
+.main-content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
