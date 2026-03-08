@@ -4,7 +4,7 @@
       <h2 class="mb-4 text-center">Job Application Form</h2>
       <form
         method="post"
-        action="http://mercury.swin.edu.au/104950199/formtest.php"
+        action="https://mercury.swin.edu.au/104950199/formtest.php"
         @submit="handleSubmit"
         novalidate
       >
